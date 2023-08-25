@@ -1,0 +1,162 @@
+
+
+
+<html>
+    <head>
+
+        <link rel="stylesheet" href="css.css">
+
+        <link rel="icon" type="image/x-icon" href="favicon.jpg">
+
+
+        <title>الصفحة الرئيسية</title>
+    </head>
+    <body>
+
+        <div class="divhome" dir="rtl">
+            <a href="Home.html">الصفحة الرئيسية</a>
+            <a href="contactus.html">تواصل معنا</a>
+            <a href="about.html">عنا</a>
+            <a href="images.html">صورنا</a>
+            <a href="videos.html">فيديوهاتنا</a>
+        </div>
+
+
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="img.css">
+
+<body>
+
+
+<center><div class="container">
+   <center> <h2>علوم</h2></center>
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="1.jpg">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="3.jpg">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="4.jpg">
+  </div></center>
+    
+  
+
+
+
+
+
+
+
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  
+    
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>

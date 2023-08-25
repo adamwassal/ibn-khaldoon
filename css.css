@@ -1,0 +1,66 @@
+.divhome {
+
+    background-color: black;
+
+}
+
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: rgb(255, 0, 0);
+}
+
+.d1 {
+    background-color: rgba(255, 255, 255, 0.096);
+    width: 300px;
+    border: 15px solid rgb(9, 236, 217);
+    padding: 50px;
+    margin: 20px;
+  }
+
+  
+.d2 {
+  background-color: rgba(255, 255, 255, 0.096);
+  width: auto;
+  border: 15px solid rgb(9, 236, 217);
+  padding: 50px;
+  margin: 20px;
+}
+
+.divfooter {
+  background-color: rgb(20, 18, 18);
+  height: 200px;
+}
+
+.he1 {
+  text-align: center;
+  color: white;
+}
+
+
+
+
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
